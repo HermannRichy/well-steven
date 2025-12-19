@@ -12,7 +12,7 @@ export default function Hero() {
         <section className="lg:mt-2">
             <ImagesSlider
                 images={images}
-                className="min-h-[90vh] lg:min-h-[85vh] max-w-6xl mx-auto lg:rounded-4xl overflow-hidden relative"
+                className="min-h-[85vh] max-w-6xl mx-auto lg:rounded-4xl overflow-hidden relative"
             >
                 <motion.div
                     initial={{
@@ -26,7 +26,7 @@ export default function Hero() {
                     transition={{
                         duration: 0.6,
                     }}
-                    className="z-50 flex flex-col gap-y-4 w-4/5 max-w-md absolute bottom-8 left-5 bg-primary/90 rounded-xl p-4 lg:p-6 lg:bottom-10 lg:left-10"
+                    className="z-50 flex flex-col gap-y-4 w-4/5 max-w-md absolute bottom-10 left-5 bg-primary/90 rounded-xl p-4 lg:p-6 lg:bottom-10 lg:left-10"
                 >
                     <motion.p
                         className="text-xl md:text-3xl bg-clip-text text-transparent 
