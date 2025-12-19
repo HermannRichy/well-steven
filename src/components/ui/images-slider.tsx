@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence, cubicBezier } from "motion/react";
 import React, { useEffect, useState } from "react";
 
 export const ImagesSlider = ({
@@ -83,6 +83,8 @@ export const ImagesSlider = ({
         };
     }, []);
 
+    const easeInOut = cubicBezier(0.4, 0, 0.2, 1);
+
     const slideVariants = {
         initial: {
             scale: 0,
@@ -95,7 +97,7 @@ export const ImagesSlider = ({
             opacity: 1,
             transition: {
                 duration: 0.5,
-                ease: "easeInOut",
+                ease: easeInOut,
             },
         },
         upExit: {
@@ -103,7 +105,7 @@ export const ImagesSlider = ({
             y: "-150%",
             transition: {
                 duration: 1,
-                ease: "easeInOut",
+                ease: easeInOut,
             },
         },
         downExit: {
@@ -111,7 +113,7 @@ export const ImagesSlider = ({
             y: "150%",
             transition: {
                 duration: 1,
-                ease: "easeInOut",
+                ease: easeInOut,
             },
         },
     };
