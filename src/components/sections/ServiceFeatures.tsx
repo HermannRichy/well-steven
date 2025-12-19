@@ -171,13 +171,13 @@ const FeaturesGrid: React.FC = () => {
             </h2>
             
             <motion.button 
-              whileHover={{ scale: 1.03, backgroundColor: '#ff9c2d' }}
-              whileTap={{ scale: 0.97 }}
-              className="bg-[#ffac4d] text-slate-900 px-6 py-3 lg:px-12 lg:py-5 rounded-full font-bold text-sm lg:text-base flex items-center gap-2 lg:gap-3 transition-colors shadow-2xl"
-            >
-              Planifiez une consultation
-              <ArrowUpRight size={18} className="lg:size-20" strokeWidth={2.5} />
-            </motion.button>
+                          whileHover={{ scale: 1.02, backgroundColor: '#ff9c2d' }}
+                          whileTap={{ scale: 0.98 }}
+                          className="bg-[#ffac4d] text-slate-900 px-10 py-5 rounded-full font-bold text-sm flex items-center gap-3 transition-colors shadow-lg shadow-orange-200"
+                        >
+                          Planifiez une consultation
+                          <ArrowUpRight size={18} />
+                        </motion.button>
           </motion.div>
         </div>
       </section>
