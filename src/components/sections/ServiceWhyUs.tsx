@@ -35,7 +35,7 @@ const WhyChooseUs: React.FC = () => {
                 Pourquoi nous choisir ?
               </span>
               <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
-                Des conseils d'experts pour renforcer votre confiance financière
+                Des conseils d&apos;experts pour renforcer votre confiance financière
               </h2>
             </div>
 

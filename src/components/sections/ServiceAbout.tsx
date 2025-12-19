@@ -50,7 +50,7 @@ const ServicePage: React.FC = () => {
     }
   };
 
-  // Animation du cercle avec scale pour voir le cercle se former
+  // Animation du cercle  
   const circleVariants: Variants = {
     initial: { 
       scale: 0,
@@ -79,7 +79,7 @@ const ServicePage: React.FC = () => {
       color: "#ffffff",
       scale: 1.1,
       transition: { 
-        delay: 0.1, // Délai pour voir le cercle se former d'abord
+        delay: 0.1,
         duration: 0.3 
       }
     }
@@ -87,7 +87,6 @@ const ServicePage: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen mb-20 lg:mb-50 selection:bg-orange-100">
-      {/* Hero / Header Section - Espace réduit */}
       <section className="max-w-6xl mx-auto pt-12 lg:pt-24 pb-8 lg:pb-16 px-4 lg:px-0">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
           <motion.div 
@@ -137,8 +136,7 @@ const ServicePage: React.FC = () => {
             >
               {/* Animated Icon Container */}
               <div className="relative mb-8 lg:mb-14 w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center">
-                {/* Cercle qui grandit depuis le centre */}
-                <motion.div 
+                 <motion.div 
                   variants={circleVariants}
                   className="absolute inset-0 z-0 rounded-full"
                   style={{ transformOrigin: "center center" }}

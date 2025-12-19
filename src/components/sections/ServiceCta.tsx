@@ -7,8 +7,7 @@ import { ArrowUpRight } from 'lucide-react';
 const CTASection: React.FC = () => {
   return (
     <section className="relative h-[650px] flex items-center overflow-hidden">
-      {/* Background Image with precise dark overlay */}
-      <div className="absolute inset-0 z-0">
+       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80" 
           alt="Support comptable" 

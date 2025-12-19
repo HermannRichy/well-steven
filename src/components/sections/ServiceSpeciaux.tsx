@@ -52,7 +52,7 @@ const ServiceSpeciaux: React.FC = () => {
             </motion.div>
           </div>
 
-          {/* Right Side - Interactive Content */}
+          {/* Right Side */}
           <div className="lg:col-span-7 mt-6 lg:mt-0">
             {/* Grand titre et sous-titre */}
             <div className="mb-6 lg:mb-10">
@@ -86,7 +86,6 @@ const ServiceSpeciaux: React.FC = () => {
                     transition={{ delay: index * 0.1 }}
                     className="relative"
                   >
-                    {/* Active Indicator - Vertical Border */}
                     <motion.div
                       layoutId="activeIndicator"
                       className={`absolute left-0 top-0 bottom-0 w-1 rounded-r-full bg-gradient-to-b from-orange-400 to-orange-500`}

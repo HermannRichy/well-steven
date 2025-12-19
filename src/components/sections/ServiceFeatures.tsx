@@ -42,7 +42,7 @@ const FeaturesGrid: React.FC = () => {
             viewport={{ once: true, margin: "-100px" }}
             className="flex flex-col lg:flex-row gap-4 lg:gap-6"
           >
-            {/* Card 1: Dark Style - Notre mission */}
+            {/* Card 1: Notre mission */}
             <motion.div 
               variants={cardVariants}
               className="bg-[#0b1727] rounded-2xl lg:rounded-[2.5rem] p-6 lg:p-10 h-auto lg:h-[520px] relative overflow-hidden flex flex-col group flex-1 min-w-0"
@@ -66,7 +66,7 @@ const FeaturesGrid: React.FC = () => {
               </div>
             </motion.div>
 
-            {/* Card 2: Neutral Style with Circles - Notre approche */}
+            {/* Card 2: Notre approche */}
             <motion.div 
               variants={cardVariants}
               className="bg-[#f3f4f6] rounded-2xl lg:rounded-[2.5rem] p-6 lg:p-10 h-auto lg:h-[520px] flex flex-col relative overflow-hidden flex-1 min-w-0 mt-4 lg:mt-0"
@@ -82,7 +82,6 @@ const FeaturesGrid: React.FC = () => {
                 </p>
               </div>
 
-              {/* Overlapping Circles Visual - Position ajustée */}
               <div className="relative flex justify-center items-center h-32 lg:h-40 my-4 lg:my-4">
                   <div className="w-24 h-24 lg:w-36 lg:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl absolute -translate-x-8 lg:-translate-x-12 z-10">
                       <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Consultation comptable" />
@@ -92,14 +91,13 @@ const FeaturesGrid: React.FC = () => {
                   </div>
               </div>
 
-              {/* Bouton CTA maintenant bien visible */}
+              {/* Bouton CTA */}
               <div className="mt-4 lg:mt-6 pt-4 lg:pt-6 border-t border-slate-300/50">
                 <span className="inline-block bg-[#0b1727] text-white text-[10px] lg:text-[11px] font-black uppercase tracking-widest px-4 py-2 lg:px-6 lg:py-2.5 rounded-full hover:bg-slate-800 transition-colors duration-300 cursor-pointer">
                   Pratique • Rigoureux • Résultats
                 </span>
               </div>
 
-              {/* Espacement supplémentaire pour pousser le bouton vers le bas */}
               <div className="flex-1 hidden lg:block"></div>
             </motion.div>
 
@@ -108,7 +106,6 @@ const FeaturesGrid: React.FC = () => {
               variants={cardVariants}
               className="bg-[#ffac4d] rounded-2xl lg:rounded-[2.5rem] p-4 lg:p-6 flex flex-col h-auto lg:h-[520px] flex-1 lg:flex-[2] min-w-0 mt-4 lg:mt-0"
             >
-              {/* Image en haut - reste horizontale */}
               <div className="w-full h-48 lg:h-64 rounded-xl lg:rounded-[1.8rem] overflow-hidden mb-4 lg:mb-8 shadow-inner">
                 <img 
                   src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80" 
@@ -117,7 +114,7 @@ const FeaturesGrid: React.FC = () => {
                 />
               </div>
               
-              {/* Contenu en dessous */}
+              {/* Pourquoi nous choisir? */}
               <div className="px-2 lg:px-4 space-y-4 lg:space-y-6 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-slate-900 text-lg lg:text-2xl font-bold leading-snug mb-2 lg:mb-4">
@@ -143,9 +140,7 @@ const FeaturesGrid: React.FC = () => {
         </div>
       </section>
 
-      {/* Section Image Full Width - EN DEHORS du container, 100% largeur */}
       <section className="relative h-[400px] lg:h-[550px] xl:h-[650px] flex items-center overflow-hidden">
-        {/* Background Image with precise dark overlay */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80" 
@@ -164,7 +159,7 @@ const FeaturesGrid: React.FC = () => {
             className="max-w-3xl space-y-6 lg:space-y-10"
           >
             <span className="text-[10px] lg:text-[11px] font-black uppercase tracking-[0.4em] text-white/90 block">
-              Cabinet d'Assistance Comptable, Fiscale et de Formation
+              Cabinet d&apos;Assistance Comptable, Fiscale et de Formation
             </span>
             <h2 className="text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-[1.05] tracking-tight">
               Sécuriser vos obligations. Structurer votre gestion. Développer vos compétences.

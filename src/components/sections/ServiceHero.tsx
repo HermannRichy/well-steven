@@ -6,7 +6,7 @@ export default function ServiceHero() {
             {/* Texte */}
             <div className="mx-auto max-w-4xl px-4 md:px-6 text-center">
                 <span className="block text-xs md:text-sm font-semibold tracking-widest text-neutral-500">
-                    CABINET D'ASSISTANCE COMPTABLE, FISCALE ET DE FORMATION
+                    CABINET D&apos;ASSISTANCE COMPTABLE, FISCALE ET DE FORMATION
                 </span>
 
                 <h1 className="mt-4 md:mt-6 text-2xl md:text-4xl lg:text-6xl font-extrabold leading-tight tracking-tight text-neutral-900">
@@ -18,7 +18,7 @@ export default function ServiceHero() {
                 </h1>
             </div>
 
-            {/* Image plein écran avec marges */}
+            {/* Image */}
             <div className="mx-auto mt-10 md:mt-20 px-4 md:px-0 w-full md:w-[calc(100%-3rem)] lg:w-[calc(100%-6rem)] overflow-hidden rounded-xl md:rounded-2xl">
                 <div className="min-h-[50vh] md:min-h-[60vh] lg:min-h-[85vh] max-w-6xl mx-auto rounded-xl md:rounded-2xl lg:rounded-4xl overflow-hidden relative">
                     <Image
