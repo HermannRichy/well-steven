@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit, Momo_Trust_Display } from "next/font/google";
 import Header from "@/components/sections/Header";
 import "./globals.css";
+import Footer from "@/components/sections/Footer";
 
 const outfit = Outfit({
     variable: "--font-outfit",
@@ -30,8 +31,9 @@ export default function RootLayout({
             <body
                 className={`${outfit.variable} ${momoTrustDisplay.variable} antialiased font-outfit`}
             >
-                <Header /> 
+                <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     );
