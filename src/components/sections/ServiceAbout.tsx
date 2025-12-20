@@ -96,7 +96,7 @@ const ServicePage: React.FC = () => {
             className="lg:col-span-4"
           >
             <div className="inline-flex flex-col">
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-900 mb-1">
+              <span className="text-[10px] font-momo font-black uppercase tracking-[0.3em] text-slate-900 mb-1">
                 Nos expertises & accompagnements
               </span>
             </div>
@@ -108,7 +108,7 @@ const ServicePage: React.FC = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="lg:col-span-8"
           >
-            <h1 className="text-2xl lg:text-4xl font-medium text-slate-900 leading-[1.05] tracking-tighter">
+            <h1 className="text-2xl font-momo lg:text-4xl font-medium text-slate-900 leading-[1.05] tracking-tighter">
               Nous accompagnons les particuliers et les entreprises avec des solutions comptables, fiscales et financières pensées pour la performance et la conformité.
             </h1>
           </motion.div>
@@ -152,7 +152,7 @@ const ServicePage: React.FC = () => {
               </div>
               
               <div className="space-y-4 lg:space-y-6">
-                <h3 className="text-lg lg:text-2xl font-semibold text-slate-900 tracking-tight leading-snug">
+                <h3 className="text-lg font-momo lg:text-xl font-semibold text-slate-900 tracking-tight leading-snug">
                   {service.title}
                 </h3>
                 <p className="text-slate-500 leading-relaxed text-sm lg:text-[16px] font-light max-w-full lg:max-w-[280px]">

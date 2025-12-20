@@ -60,7 +60,7 @@ const ServiceSpeciaux: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-900 mb-3 lg:mb-4"
+                className="text-3xl font-momo lg:text-4xl xl:text-5xl font-bold text-slate-900 mb-3 lg:mb-4"
               >
                 Nos Services
               </motion.h1>
@@ -102,7 +102,7 @@ const ServiceSpeciaux: React.FC = () => {
                         isActive ? 'bg-slate-50' : 'hover:bg-slate-50/50'
                       }`}
                     >
-                      <h3 className={`text-lg lg:text-xl xl:text-2xl font-medium tracking-tight ${
+                      <h3 className={`text-lg font-momo lg:text-xl xl:text-xl font-medium tracking-tight ${
                         isActive ? 'text-slate-900' : 'text-slate-700 group-hover:text-slate-900'
                       }`}>
                         {service.title}

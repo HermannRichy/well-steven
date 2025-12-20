@@ -2,7 +2,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { InteractiveHoverButton } from '../ui/interactive-hover-button';
 
 const FeaturesGrid: React.FC = () => {
   const containerVariants = {
@@ -29,7 +31,7 @@ const FeaturesGrid: React.FC = () => {
             <span className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-500 block">
               Notre positionnement
             </span>
-            <h2 className="text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-slate-900 tracking-tight leading-[1.1] max-w-4xl mx-auto">
+            <h2 className="text-2xl font-momo lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-slate-900 tracking-tight leading-[1.1] max-w-4xl mx-auto">
               Un partenaire technique de confiance, pas un simple prestataire
             </h2>
           </div>
@@ -84,20 +86,33 @@ const FeaturesGrid: React.FC = () => {
 
               <div className="relative flex justify-center items-center h-32 lg:h-40 my-4 lg:my-4">
                   <div className="w-24 h-24 lg:w-36 lg:h-36 rounded-full overflow-hidden border-4 border-white shadow-xl absolute -translate-x-8 lg:-translate-x-12 z-10">
-                      <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Consultation comptable" />
+                      <div className="relative w-full h-full">
+                        <Image 
+                          src="/Services/service-3.jpg" 
+                          alt="Consultation comptable"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 96px, 144px"
+                        />
+                      </div>
                   </div>
                   <div className="w-20 h-20 lg:w-28 lg:h-28 rounded-full overflow-hidden border-4 border-white shadow-xl absolute translate-x-8 lg:translate-x-12">
-                      <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80" className="w-full h-full object-cover" alt="Formation professionnelle" />
+                      <div className="relative w-full h-full">
+                        <Image 
+                          src="/Services/service-1.jpg" 
+                          alt="Formation professionnelle"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 80px, 112px"
+                        />
+                      </div>
                   </div>
               </div>
 
               {/* Bouton CTA */}
-              <div className="mt-4 lg:mt-6 pt-4 lg:pt-6 border-t border-slate-300/50">
-                <span className="inline-block bg-[#0b1727] text-white text-[10px] lg:text-[11px] font-black uppercase tracking-widest px-4 py-2 lg:px-6 lg:py-2.5 rounded-full hover:bg-slate-800 transition-colors duration-300 cursor-pointer">
-                  Pratique • Rigoureux • Résultats
-                </span>
-              </div>
-
+              <InteractiveHoverButton className="bg-secondary text-sm">
+                <Link href="#">Planifiez une consultation</Link>
+              </InteractiveHoverButton>
               <div className="flex-1 hidden lg:block"></div>
             </motion.div>
 
@@ -107,11 +122,15 @@ const FeaturesGrid: React.FC = () => {
               className="bg-[#ffac4d] rounded-2xl lg:rounded-[2.5rem] p-4 lg:p-6 flex flex-col h-auto lg:h-[520px] flex-1 lg:flex-[2] min-w-0 mt-4 lg:mt-0"
             >
               <div className="w-full h-48 lg:h-64 rounded-xl lg:rounded-[1.8rem] overflow-hidden mb-4 lg:mb-8 shadow-inner">
-                <img 
-                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80" 
-                  alt="Équipe Well Steven" 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                />
+                <div className="relative w-full h-full">
+                  <Image 
+                    src="/Services/service-2.jpg" 
+                    alt="Équipe Well Steven" 
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-700"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
               </div>
               
               {/* Pourquoi nous choisir? */}
@@ -128,12 +147,6 @@ const FeaturesGrid: React.FC = () => {
                     ✔ Engagement sur la qualité et le respect des délais
                   </p>
                 </div>
-                
-                <div className="mt-4 lg:mt-0">
-                  <button className="bg-[#0b1727] text-white text-xs lg:text-sm font-bold uppercase tracking-wider px-4 py-2.5 lg:px-8 lg:py-3.5 rounded-full hover:bg-slate-900 transition-colors duration-300 w-full lg:w-auto">
-                    Découvrir nos solutions
-                  </button>
-                </div>
               </div>
             </motion.div>
           </motion.div>
@@ -142,11 +155,16 @@ const FeaturesGrid: React.FC = () => {
 
       <section className="relative h-[400px] lg:h-[550px] xl:h-[650px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80" 
-            alt="Support comptable Well Steven" 
-            className="w-full h-full object-cover"
-          />
+          <div className="relative w-full h-full">
+            <Image 
+              src="/Services/tresorerie.jpg" 
+              alt="Support comptable Well Steven"
+              fill
+              className="object-cover"
+              sizes="100vw"
+              priority
+            />
+          </div>
           <div className="absolute inset-0 bg-black/55" />
         </div>
 
@@ -161,18 +179,13 @@ const FeaturesGrid: React.FC = () => {
             <span className="text-[10px] lg:text-[11px] font-black uppercase tracking-[0.4em] text-white/90 block">
               Cabinet d&apos;Assistance Comptable, Fiscale et de Formation
             </span>
-            <h2 className="text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-[1.05] tracking-tight">
+            <h2 className="text-2xl font-momo lg:text-3xl xl:text-4xl 2xl:text-7xl font-bold text-white leading-[1.05] tracking-tight">
               Sécuriser vos obligations. Structurer votre gestion. Développer vos compétences.
             </h2>
             
-            <motion.button 
-                          whileHover={{ scale: 1.02, backgroundColor: '#ff9c2d' }}
-                          whileTap={{ scale: 0.98 }}
-                          className="bg-[#ffac4d] text-slate-900 px-10 py-5 rounded-full font-bold text-sm flex items-center gap-3 transition-colors shadow-lg shadow-orange-200"
-                        >
-                          Planifiez une consultation
-                          <ArrowUpRight size={18} />
-                        </motion.button>
+            <InteractiveHoverButton className="bg-secondary text-sm">
+              <Link href="#">Planifiez une consultation</Link>
+            </InteractiveHoverButton>
           </motion.div>
         </div>
       </section>

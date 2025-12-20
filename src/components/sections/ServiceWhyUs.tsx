@@ -2,6 +2,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BarChart3, Layers, ArrowUpRight } from 'lucide-react';
+import { InteractiveHoverButton } from "../ui/interactive-hover-button";
+import Link from 'next/link';
+import Image from 'next/image';
 
 const WhyChooseUs: React.FC = () => {
   const features = [
@@ -31,10 +34,10 @@ const WhyChooseUs: React.FC = () => {
             className="space-y-8 lg:space-y-12"
           >
             <div className="space-y-4 lg:space-y-6">
-              <span className="text-[10px] md:text-[11px] font-black uppercase tracking-[0.3em] text-slate-500 block">
+              <span className="text-[10px] font-momo md:text-[11px] font-black uppercase tracking-[0.3em] text-slate-500 block">
                 Pourquoi nous choisir ?
               </span>
-              <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
+              <h2 className="text-2xl font-momo md:text-3xl lg:text-2xl xl:text-4xl font-bold text-slate-900 leading-[1.1] tracking-tight">
                 Des conseils d&apos;experts pour renforcer votre confiance financière
               </h2>
             </div>
@@ -55,16 +58,9 @@ const WhyChooseUs: React.FC = () => {
                 </div>
               ))}
             </div>
-
-            
-            <motion.button 
-              whileHover={{ scale: 1.02, backgroundColor: '#ff9c2d' }}
-              whileTap={{ scale: 0.98 }}
-              className="bg-[#ffac4d] text-slate-900 px-10 py-5 rounded-full font-bold text-sm flex items-center gap-3 transition-colors shadow-lg shadow-orange-200"
-            >
-              Planifiez une consultation
-              <ArrowUpRight size={18} />
-            </motion.button>
+            <InteractiveHoverButton className="bg-secondary text-sm">
+              <Link href="#">Planifiez une consultation</Link>
+            </InteractiveHoverButton>
           </motion.div>
 
           {/* Right Column: Image */}
@@ -76,11 +72,15 @@ const WhyChooseUs: React.FC = () => {
             className="relative h-[300px] md:h-[400px] lg:h-[500px] xl:h-[650px] w-full mt-8 lg:mt-0"
           >
             <div className="absolute inset-0 rounded-2xl lg:rounded-[2.5rem] overflow-hidden shadow-xl lg:shadow-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80" 
-                alt="Expert financial analysis" 
-                className="w-full h-full object-cover"
-              />
+              <div className="relative w-full h-full">
+                <Image 
+                  src="/Services/comptable.jpg" 
+                  alt="Expert financial analysis" 
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
               <div className="absolute inset-0 bg-slate-900/5 mix-blend-multiply" />
             </div>
           </motion.div>
