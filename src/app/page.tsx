@@ -6,7 +6,6 @@ import WhoWeAre from "@/components/sections/WhoWeAre";
 export default function Home() {
     return (
         <>
-            <Header />
             <main>
                 <Hero />
                 <WhoWeAre />
