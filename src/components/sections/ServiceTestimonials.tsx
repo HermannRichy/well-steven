@@ -108,7 +108,7 @@ const Testimonials = () => {
         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-500 block mb-4">
           Commentaires des clients
         </span>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-slate-900 tracking-tight leading-[1.1] max-w-4xl mx-auto">
+        <h2 className="text-4xl font-momo md:text-5xl lg:text-6xl font-medium text-slate-900 tracking-tight leading-[1.1] max-w-4xl mx-auto">
           Une expérience digne de confiance, un service que vous recommanderez
         </h2>
       </div>
@@ -131,13 +131,6 @@ const Testimonials = () => {
             />
           ))}
         </motion.div>
-      </div>
-
-      {/* Decorative logo */}
-      <div className="container mx-auto px-6 relative h-0">
-        <div className="absolute right-0 -top-12 w-10 h-10 bg-black rounded-full flex items-center justify-center shadow-lg">
-          <span className="text-white font-black text-xl italic">K</span>
-        </div>
       </div>
     </section>
   );

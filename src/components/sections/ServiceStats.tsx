@@ -67,7 +67,7 @@ const Stats: React.FC = () => {
                 ${index === 2 ? 'lg:border-b-0' : ''}
               `}
             >
-              <h4 className="text-4xl md:text-[56px] lg:text-[72px] font-bold text-[#0f172a] mb-3 md:mb-6 tracking-tighter leading-none">
+              <h4 className="text-2xl font-momo md:text-[46px] lg:text-[58px] font-bold text-[#0f172a] mb-3 md:mb-6 tracking-tighter leading-none">
                 {stat.value}
               </h4>
               <p className="text-[#0f172a] font-normal text-sm md:text-[16px] lg:text-[18px] max-w-[150px] md:max-w-[200px] leading-snug">

@@ -7,7 +7,7 @@ import WhyChooseUs from "@/components/sections/ServiceWhyUs";
 import Testimonials from "@/components/sections/ServiceTestimonials";
 import CTASection from "@/components/sections/ServiceCta";
 
-export default function Home() {
+export default function Services() {
     return (
         <>
             <main>
