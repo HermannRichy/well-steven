@@ -1,6 +1,7 @@
 import Benefit from "@/components/sections/Benefit";
-import Header from "@/components/sections/Header";
 import Hero from "@/components/sections/Hero";
+import Testimonials from "@/components/sections/ServiceTestimonials";
+import WhyChooseUs from "@/components/sections/ServiceWhyUs";
 import WhoWeAre from "@/components/sections/WhoWeAre";
 
 export default function Home() {
@@ -10,6 +11,8 @@ export default function Home() {
                 <Hero />
                 <WhoWeAre />
                 <Benefit />
+                <WhyChooseUs />
+                <Testimonials />
             </main>
         </>
     );
