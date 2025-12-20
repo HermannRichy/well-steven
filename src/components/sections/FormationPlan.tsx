@@ -243,9 +243,38 @@ const FormationPlan: React.FC = () => {
     }));
   };
 
+  // Fonction pour générer le message WhatsApp personnalisé
+  const generateWhatsAppMessage = (plan: FormationPlan) => {
+    const message = `Bonjour, j'espère que vous allez bien ! 
+
+Je suis intéressé(e) par votre formation : 
+
+${plan.title}
+
+Prix: ${plan.price} FCFA
+Frais d'inscription: ${plan.regFee} FCFA
+Durée : ${plan.duration || 'À déterminer'}
+
+Description : ${plan.description}
+
+Je souhaiterais m'inscrire à cette formation. Pourriez-vous me donner plus d'informations sur les modalités d'inscription ?
+
+Merci d'avance !`;
+
+    return encodeURIComponent(message);
+  };
+
+  // Fonction pour rediriger vers WhatsApp
+  const redirectToWhatsApp = (plan: FormationPlan) => {
+    const phoneNumber = "2290190479512"; 
+    const message = generateWhatsAppMessage(plan);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="bg-[#fcfcfc] min-h-screen pt-16 md:pt-24 lg:pt-28 pb-16 md:pb-20 lg:pb-24 selection:bg-orange-100">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-15">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-15">
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 md:mb-16 gap-6 md:gap-8">
           <div className="space-y-3 md:space-y-4 w-full lg:w-2/3">
@@ -345,9 +374,17 @@ const FormationPlan: React.FC = () => {
                   </span>
                 </div>
               </div>
-<InteractiveHoverButton className="bg-secondary text-sm w-fit">
-                        <Link href="#">S&apos;inscrire maintenant</Link>
-                    </InteractiveHoverButton>
+
+              {/* MODIFICATION ICI : Bouton avec redirection WhatsApp */}
+              <div className="mb-6 sm:mb-8 lg:mb-10">
+                <button
+                  onClick={() => redirectToWhatsApp(plan)}
+                  className="bg-secondary text-slate-900 px-6 py-3 rounded-full font-bold text-sm flex items-center justify-center gap-2 hover:opacity-90 transition-opacity w-full"
+                >
+                  <span>S&apos;inscrire maintenant</span>
+                  <ArrowUpRight size={16} />
+                </button>
+              </div>
 
               {/* Modules de formation */}
               <div className="mb-6 sm:mb-8">
