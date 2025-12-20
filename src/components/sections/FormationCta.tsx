@@ -115,13 +115,13 @@ const FormationCta: React.FC = () => {
       </motion.div>
 
       {/* Central Content */}
-      <div className="container mx-auto px-6 relative z-20 text-center">
+      <div className="w-full max-w-6xl mx-auto px-6 relative z-20 text-center">
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-5xl mx-auto space-y-12"
+          className="mx-auto space-y-12"
         >
           {/* Badge Label */}
           <div className="flex items-center justify-center gap-4">
