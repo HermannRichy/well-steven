@@ -26,11 +26,11 @@ export default function Hero() {
                     transition={{
                         duration: 0.6,
                     }}
-                    className="z-50 flex flex-col gap-y-4 w-4/5 max-w-xl absolute bottom-10 left-5 bg-primary/90 rounded-xl p-4 lg:p-6 lg:bottom-10 lg:left-10"
+                    className="z-50 flex flex-col gap-y-4 w-4/5 max-w-xl absolute bottom-10 left-5 bg-primary/80 rounded-xl p-4 lg:p-6 lg:bottom-10 lg:left-10"
                 >
                     <motion.p
                         className="text-xl md:text-3xl bg-clip-text text-transparent 
-             bg-linear-to-b from-neutral-50 to-neutral-400"
+                        bg-linear-to-b from-neutral-50 to-neutral-400"
                     >
                         Nous accompagnons les entreprises, établissements
                         scolaires, ONG, associations et professionnels dans une
@@ -41,7 +41,7 @@ export default function Hero() {
                         </span>
                     </motion.p>
 
-                    <div className="flex flex-row gap-4">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <InteractiveHoverButton className="bg-secondary text-sm w-fit">
                             <Link href="/services">Nos services</Link>
                         </InteractiveHoverButton>
