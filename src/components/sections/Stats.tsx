@@ -1,8 +1,8 @@
 export default function Stats() {
   const stats = [
-    { label: "Tax returns filed", value: "5000+" },
-    { label: "Clients served", value: "2000+" },
-    { label: "Client retention rate", value: "95%" },
+    { label: "Déclarations fiscales déposées", value: "500+" },
+    { label: "Clients accompagnés", value: "500+" },
+    { label: "Taux de satisfaction client", value: "95%" },
   ];
 
   return (
