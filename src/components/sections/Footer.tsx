@@ -19,19 +19,19 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
                     {/* CTA Block */}
                     <div className="flex flex-col justify-between space-y-6">
-                        <h3 className="text-2xl font-bold">Prêt à démarrer?</h3>
+                        <h3 className="text-2xl font-momo">Prêt à démarrer?</h3>
                         <p className="text-neutral-300">
                             Contactez-nous pour discuter de vos besoins en
                             comptabilité et fiscalité.
                         </p>
                         <InteractiveHoverButton className="bg-secondary text-sm w-fit">
-                            <Link href="#contact">Nous contacter</Link>
+                            <Link href="/contact">Nous contacter</Link>
                         </InteractiveHoverButton>
                     </div>
 
                     {/* Contact Block */}
                     <div className="space-y-4">
-                        <h3 className="text-xl font-bold">Entrer en contact</h3>
+                        <h3 className="text-xl font-momo">Entrer en contact</h3>
                         <div className="space-y-3">
                             <div className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 mt-1 shrink-0" />
@@ -70,7 +70,7 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <div className="space-y-4">
-                        <h3 className="text-xl font-bold">Liens rapides</h3>
+                        <h3 className="text-xl font-momo">Liens rapides</h3>
                         <nav className="space-y-2">
                             <Link
                                 href="/"
