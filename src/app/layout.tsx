@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Momo_Trust_Display } from "next/font/google";
+import { Outfit, Momo_Trust_Display, Poppins } from "next/font/google";
 import Header from "@/components/sections/Header";
 import "./globals.css";
 import Footer from "@/components/sections/Footer";
@@ -12,6 +12,12 @@ const outfit = Outfit({
 const momoTrustDisplay = Momo_Trust_Display({
     variable: "--font-momo-trust-display",
     weight: ["400"],
+    subsets: ["latin"],
+});
+
+const poppins = Poppins({
+    variable: "--font-poppins",
+    weight: ["400", "500", "600", "700"],
     subsets: ["latin"],
 });
 
@@ -29,7 +35,7 @@ export default function RootLayout({
     return (
         <html lang="en" className="scroll-smooth">
             <body
-                className={`${outfit.variable} ${momoTrustDisplay.variable} antialiased font-outfit`}
+                className={`${outfit.variable} ${momoTrustDisplay.variable} ${poppins.variable} font-sans antialiased font-poppins`}
             >
                 <Header />
                 {children}
