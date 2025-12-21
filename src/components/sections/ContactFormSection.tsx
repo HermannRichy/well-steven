@@ -50,7 +50,7 @@ export default function ContactFormSection() {
       {/* Côté Gauche - Texte */}
       <div>
         <p className="uppercase tracking-widest text-xs text-gray-500 mb-4">Contactez-nous</p>
-          <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-tight font-poppins">
+          <h2 className="text-4xl font-normal text-slate-900 mb-6 leading-tight font-momo">
             Restons en contact ! Nous sommes là pour sécuriser vos obligations et développer vos compétences.
           </h2>
         <p className="text-gray-600 mb-10 leading-relaxed">

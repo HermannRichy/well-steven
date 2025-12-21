@@ -41,7 +41,7 @@ export default function ContactFAQ() {
     <section className="py-20 px-6 md:px-20 bg-gray-50">
       <div className="text-center mb-12">
         <p className="uppercase tracking-widest text-xs text-gray-500 mb-4">Foire aux questions</p>
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-3xl font-normal font-momo">
           Des réponses claires<br />à vos questions essentielles
         </h2>
       </div>

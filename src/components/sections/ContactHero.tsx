@@ -17,9 +17,9 @@ export default function ContactHero() {
           Contactez WELL STEVEN
         </p>
 
-        <h1 className="font-poppins font-normal text-4xl md:text-6xl mb-8 leading-tight">
-          <span className="font-normal">Sécurisez vos obligations, structurez votre gestion,</span>
-          <br /> <span className="font-normal">et développez vos compétences dès aujourd&apos;hui !</span>
+        <h1 className="font-poppins font-normal text-3xl md:text-5xl mb-8 leading-tight">
+          <span className="font-momo font-normal">Sécurisez vos obligations, structurez votre gestion,</span>
+          <br /> <span className="font-momo font-normal">et développez vos compétences dès aujourd&apos;hui !</span>
         </h1>
 
         {/* Bouton CTA interactif */}
