@@ -113,8 +113,12 @@ export default function Footer() {
                     <div className="text-center md:text-left">
                         <p className="text-neutral-300">
                             <Copyright className="w-3 h-3 inline mr-2" />
-                            2025 <span className="font-momo">WELL STEVEN</span>.
-                            Tous droits réservés.
+                            2025{" "}
+                            <span className="font-momo uppercase">
+                                <span className="text-secondary">Well</span>{" "}
+                                STEVEN
+                            </span>
+                            . Tous droits réservés.
                         </p>
                     </div>
 

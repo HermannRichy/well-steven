@@ -24,7 +24,7 @@ export default function Header() {
     return (
         <>
             <header className="flex items-center justify-between p-4 lg:hidden">
-                <h1 className="font-momo font-bold text-primary text-xl">
+                <h1 className="font-momo font-bold text-primary text-xl uppercase">
                     <span className="text-secondary">Well</span> Steven
                 </h1>
                 <DropdownMenu modal={false}>
