@@ -16,7 +16,7 @@ export default function Benefit() {
                         </span>
                     </h2>
                     <InteractiveHoverButton className="bg-secondary w-fit h-fit">
-                        <Link href="#contact-us">Contactez-nous</Link>
+                        <Link href="/contact">Contactez-nous</Link>
                     </InteractiveHoverButton>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-10 gap-6 mt-12">

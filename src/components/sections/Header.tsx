@@ -53,7 +53,7 @@ export default function Header() {
             </header>
             <header className="hidden lg:block">
                 <div className="max-w-6xl mx-auto py-5 flex items-center justify-between">
-                    <h1 className="font-momo font-bold text-primary text-2xl">
+                    <h1 className="font-momo font-bold text-primary text-2xl uppercase">
                         <span className="text-secondary">Well</span> Steven
                     </h1>
                     <nav className="flex space-x-6">
