@@ -4,13 +4,25 @@ export default function Testimonials() {
       name: "Nisha Devish",
       role: "Gestionnaire de comptes",
       text: "WELL STEVEN nous accompagne avec professionnalisme et rigueur. Leur suivi comptable et fiscal est fiable et adapté à nos besoins.",
-      img: "/api/placeholder/100/100"
+      img: "/images/Nisha.jpg"
     },
     {
       name: "Herman Gorshkov",
       role: "Partenaire senior",
       text: "Le service de WELL STEVEN est précis et efficace. Nous recommandons leur expertise pour toute entreprise souhaitant structurer sa gestion.",
-      img: "/api/placeholder/100/100"
+      img: "/images/Herman.jpg"
+    },
+    {
+      name: "Louise",
+      role: "Partenaire en conseil fiscal",
+      text: "WELL STEVEN propose un accompagnement comptable sérieux et efficace, essentiel pour toute entreprise souhaitant une gestion financière maîtrisée.",
+      img: "/images/foto.jpg"
+    },
+    {
+      name: "Jean Dupont",
+      role: "PDG de FinancesPro",
+      text: "L'équipe de WELL STEVEN a révolutionné notre gestion financière. Leur expertise et leur réactivité sont exceptionnelles.",
+      img: "/images/Jean Dupont.jpg"
     }
   ];
 

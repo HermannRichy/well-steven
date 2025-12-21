@@ -6,7 +6,6 @@ import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
 import Blog from "@/components/sections/Blog";
-import Footer from "@/components/sections/Footer";
 
 export default function AboutPage() {
   return (
@@ -19,7 +18,6 @@ export default function AboutPage() {
       <Testimonials />
       <FAQ />
       <Blog />
-      <Footer />
     </main>
   );
 }

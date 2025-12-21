@@ -1,19 +1,19 @@
 export default function Blog() {
   const posts = [
-    {
-      title: "5 erreurs de planification financière pour les petites entreprises",
-      date: "4 juillet 2025",
-      img: "https://images.unsplash.com/photo-1454165833767-027ffea9e41b?auto=format&fit=crop&q=80"
-    },
+  {
+    title: "5 erreurs de planification financière pour les petites entreprises",
+    date: "4 juillet 2025",
+    img: "/images/5erreurs.webp"
+  },
     {
       title: "Comprendre vos chiffres : conseils d’experts pour les entrepreneurs",
       date: "25 juin 2025",
-      img: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80"
+      img: "/images/Comprendre.webp"
     },
     {
       title: "Perspectives intelligentes en comptabilité, fiscalité et finances pour développer votre entreprise",
       date: "12 juin 2025",
-      img: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80"
+      img: "/images/Perspectives.webp"
     }
   ];
 

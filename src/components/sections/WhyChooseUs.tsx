@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
         {/* Image illustrative */}
         <div className="rounded-2xl overflow-hidden h-[500px]">
           <img 
-            src="https://images.unsplash.com/photo-1551288049-bbda3ef66851?auto=format&fit=crop&q=80" 
+           src="/images/Graphiques1.jpg" 
             className="w-full h-full object-cover" 
             alt="Graphiques financiers" 
           />
