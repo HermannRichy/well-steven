@@ -114,7 +114,10 @@ export default function Footer() {
                         <p className="text-neutral-300">
                             <Copyright className="w-3 h-3 inline mr-2" />
                             2025{" "}
-                            <span className="font-momo uppercase">
+                            <span
+                                className="font-momo uppercase"
+                                translate="no"
+                            >
                                 <span className="text-secondary">Well</span>{" "}
                                 STEVEN
                             </span>
