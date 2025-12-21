@@ -1,14 +1,58 @@
+"use client";
+
 import { Headset, Bell, Mail, Phone, ArrowUpRight } from "lucide-react";
+import { InteractiveHoverButton } from "../ui/interactive-hover-button";
+import { useState } from 'react';
 
 export default function ContactFormSection() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Formatage du message pour WhatsApp
+    const message = `*Nouveau message de contact*\n\n` +
+      `*Nom et prénom :* ${formData.name}\n` +
+      `*Email :* ${formData.email}\n` +
+      `*Téléphone :* ${formData.phone}\n` +
+      `*Message :*\n${formData.message}`;
+
+    // Encodage pour WhatsApp
+    const url = `https://wa.me/22490479512?text=${encodeURIComponent(message)}`;
+
+    // Redirection vers WhatsApp
+    window.open(url, '_blank', 'noopener,noreferrer');
+
+    // Réinitialisation du formulaire
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    });
+  }; // <-- fermeture de handleSubmit
+
   return (
     <section className="py-20 px-6 md:px-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
       {/* Côté Gauche - Texte */}
       <div>
         <p className="uppercase tracking-widest text-xs text-gray-500 mb-4">Contactez-nous</p>
-        <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">
-          Restons en contact ! Nous sommes là pour sécuriser vos obligations et développer vos compétences.
-        </h2>
+          <h2 className="text-4xl font-normal text-slate-900 mb-6 leading-tight font-momo">
+            Restons en contact ! Nous sommes là pour sécuriser vos obligations et développer vos compétences.
+          </h2>
         <p className="text-gray-600 mb-10 leading-relaxed">
           WELL STEVEN SARL vous accompagne avec des services comptables et fiscaux fiables, ainsi que des formations professionnelles adaptées à vos besoins.
         </p>
@@ -45,30 +89,50 @@ export default function ContactFormSection() {
       {/* Côté Droit - Formulaire */}
       <div className="bg-[#0a192f] p-8 md:p-12 rounded-lg shadow-2xl">
         <h3 className="text-white text-2xl font-bold mb-8">Envoyez-nous un message</h3>
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <input 
             type="text" 
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
             placeholder="Nom et prénom" 
             className="w-full bg-transparent border border-gray-700 rounded-full py-4 px-6 text-white focus:outline-none focus:border-[#f9a44e]"
+            required
           />
           <input 
-            type="email" 
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
             placeholder="Votre adresse e-mail" 
             className="w-full bg-transparent border border-gray-700 rounded-full py-4 px-6 text-white focus:outline-none focus:border-[#f9a44e]"
+            required
           />
           <input 
-            type="tel" 
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
             placeholder="Numéro de téléphone" 
             className="w-full bg-transparent border border-gray-700 rounded-full py-4 px-6 text-white focus:outline-none focus:border-[#f9a44e]"
+            required
           />
           <textarea 
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
             placeholder="Votre message" 
             rows={4}
             className="w-full bg-transparent border border-gray-700 rounded-2xl py-4 px-6 text-white focus:outline-none focus:border-[#f9a44e]"
+            required
           ></textarea>
-          <button className="w-full bg-[#f9a44e] hover:bg-[#e8933d] text-black font-bold py-4 px-8 rounded-full flex items-center justify-center gap-2 transition-all mt-4">
-            Envoyer un message <ArrowUpRight size={20} />
-          </button>
+          <InteractiveHoverButton 
+            type="submit"
+            className="w-full bg-[#f9a44e] text-black font-bold py-4 px-8 rounded-full flex items-center justify-center gap-2 mt-4"
+          >
+            <span>Envoyer un message</span>
+            <ArrowUpRight size={8} />
+          </InteractiveHoverButton>
         </form>
       </div>
     </section>
