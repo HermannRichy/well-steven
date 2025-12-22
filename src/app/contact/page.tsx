@@ -1,7 +1,7 @@
 import ContactHero from "@/components/sections/ContactHero";
 import ContactFormSection from "@/components/sections/ContactFormSection";
 import ContactDetails from "@/components/sections/ContactDetails";
-import ContactFAQ from "@/components/sections/ContactFAQ";
+import Avantages from "@/components/sections/Avantages";
 
 export default function ContactPage() {
   return (
@@ -9,7 +9,7 @@ export default function ContactPage() {
       <ContactHero />
       <ContactFormSection />
       <ContactDetails />
-      <ContactFAQ />
+      <Avantages />
     </main>
   );
 }

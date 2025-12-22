@@ -1,7 +1,11 @@
 "use client";
 
-import { Plus, Minus } from "lucide-react";
 import { useState } from "react";
+import {
+  ChevronDown,
+  ChevronUp,
+  CheckCircle
+} from "lucide-react";
 
 type FAQItem = {
   question: string;
@@ -13,28 +17,29 @@ export default function FAQ() {
 
   const faqs: FAQItem[] = [
     {
-      question: "Proposez-vous des services comptables en ligne ou à distance ?",
-      answer: "Oui, nous proposons des services comptables complets en ligne et à distance. Grâce à notre plateforme sécurisée, vous pouvez nous transmettre vos documents numériquement et bénéficier d'un suivi personnalisé, où que vous soyez."
+      question: "Expertise sectorielle approfondie",
+      answer:
+        "Une parfaite maîtrise des réalités comptables et fiscales des entreprises, établissements scolaires, ONG, associations et professionnels."
     },
     {
-      question: "Quels types de clients accompagnez-vous ?",
-      answer: "Nous accompagnons une large gamme de clients, des auto-entrepreneurs aux PME, dans divers secteurs d'activité. Que vous soyez une entreprise de services, de commerce ou de production, nous adaptons notre expertise à vos besoins spécifiques."
+      question: "Des experts qualifiés et expérimentés",
+      answer:
+        "Une équipe de professionnels rigoureux, engagés et à jour des exigences réglementaires et fiscales."
     },
     {
-      question: "Comment sont calculés vos tarifs pour vos services ?",
-      answer: "Nos tarifs sont établis en fonction de la nature et de la complexité de vos besoins. Nous proposons des forfaits adaptés à chaque situation. Contactez-nous pour une analyse personnalisée et un devis détaillé."
+      question: "Assistance comptable et fiscale digitalisée (cloud)",
+      answer:
+        "Un suivi moderne, sécurisé et accessible en temps réel pour une meilleure prise de décision."
     },
     {
-      question: "Pouvez-vous m'aider avec la déclaration et la conformité fiscale ?",
-      answer: "Absolument. Notre équipe d'experts fiscaux se charge de toutes vos obligations déclaratives et s'assure de votre conformité aux réglementations en vigueur, vous permettant de vous concentrer sur votre cœur de métier en toute sérénité."
+      question: "Solutions comptables et fiscales sur mesure",
+      answer:
+        "Des dispositifs adaptés à votre statut juridique, à votre secteur d'activité et à vos objectifs stratégiques."
     },
     {
-      question: "Pouvez-vous m'aider à préparer un audit ?",
-      answer: "Oui, nous proposons un accompagnement complet pour la préparation de vos audits. Notre équipe vous aide à rassembler et organiser les documents nécessaires, et à vous préparer aux éventuelles questions des auditeurs."
-    },
-    {
-      question: "Comment puis-je démarrer avec vos services ?",
-      answer: "C'est simple ! Contactez-nous via notre formulaire en ligne ou par téléphone pour une première consultation gratuite. Nous évaluerons ensemble vos besoins et vous proposerons la solution la plus adaptée à votre situation."
+      question: "Accompagnement client dédié et personnalisé",
+      answer:
+        "Un suivi de proximité, des conseils stratégiques continus et une réelle disponibilité pour vos enjeux."
     }
   ];
 
@@ -45,17 +50,16 @@ export default function FAQ() {
   return (
     <section className="py-20 bg-white px-6">
       <div className="max-w-3xl mx-auto">
-        {/* En-tête de la section */}
+        {/* Titre */}
         <div className="text-center mb-12">
-          <p className="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-3">
-            QUESTIONS FRÉQUEMMENT POSÉES
-          </p>
           <h2 className="text-3xl font-semibold text-slate-900">
-            Réponses claires à toutes vos questions clés
+            Bâtir des organisations solides
+            <br />
+            grâce à une gestion comptable et fiscale d&apos;excellence
           </h2>
         </div>
 
-        {/* Liste des questions */}
+        {/* FAQ */}
         <div className="space-y-3">
           {faqs.map((faq, index) => (
             <div
@@ -64,23 +68,25 @@ export default function FAQ() {
             >
               <div
                 onClick={() => toggleFAQ(index)}
-                className="p-5 hover:bg-gray-50 transition-colors cursor-pointer flex justify-between items-center"
+                className="p-5 hover:bg-gray-50 transition cursor-pointer flex justify-between items-center"
               >
-                <span className="text-slate-800 font-medium text-sm">
-                  {faq.question}
-                </span>
+                <div className="flex items-center gap-3">
+                  {/* ✔ Icône shadcn */}
+                  <CheckCircle className="h-5 w-5 text-green-600" />
+
+                  <span className="text-slate-800 font-medium text-sm">
+                    {faq.question}
+                  </span>
+                </div>
+
+                {/* 🔽🔼 Flèche shadcn */}
                 {openIndex === index ? (
-                  <Minus 
-                    size={18} 
-                    className="text-gray-400 group-hover:text-slate-900 transition-colors" 
-                  />
+                  <ChevronUp className="h-5 w-5 text-slate-700 transition-transform" />
                 ) : (
-                  <Plus 
-                    size={18} 
-                    className="text-gray-400 group-hover:text-slate-900 transition-colors" 
-                  />
+                  <ChevronDown className="h-5 w-5 text-slate-400 transition-transform" />
                 )}
               </div>
+
               {openIndex === index && (
                 <div className="px-5 pb-5 pt-2 text-sm text-gray-600">
                   {faq.answer}
