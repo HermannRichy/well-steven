@@ -1,6 +1,7 @@
 "use client";
 
-import { ArrowUpRight } from "lucide-react";
+import { InteractiveHoverButton } from "../ui/interactive-hover-button";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const fadeInUp = {
@@ -156,15 +157,9 @@ export default function AboutContent() {
           variants={fadeInUp}
           transition={{ delay: 0.2 }}
         >
-          <motion.button 
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.98 }}
-            className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-full inline-flex items-center gap-2 transition-all duration-300 font-medium text-sm shadow-lg shadow-orange-100/50 hover:shadow-xl hover:shadow-orange-200/50"
-          >
-            Contactez-nous
-            <ArrowUpRight size={18} className="group-hover:translate-x-1 transition-transform" />
-          </motion.button>
-          
+          <InteractiveHoverButton className="bg-secondary text-sm">
+            <Link href="/contact">Contactez-nous</Link>
+          </InteractiveHoverButton>
           <p className="mt-6 text-sm text-gray-500">
             Prêt à transformer votre gestion financière ? Parlons de votre projet.
           </p>

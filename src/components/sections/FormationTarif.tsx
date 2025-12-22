@@ -214,18 +214,13 @@ Merci d'avance !`;
                 </td>
                 {plans.map((plan, i) => (
                   <td key={i} className={`py-6 px-6 lg:px-8 text-center border-l border-slate-200 ${i === 2 ? 'rounded-br-2xl' : ''}`}>
-                    <InteractiveHoverButton 
-                      onClick={() => redirectToWhatsApp(plan)}
-                      className={`text-sm py-3 font-bold px-8 w-fit ${
-                        i === 0 
-                        ? 'bg-[#ff5c00] text-white' 
-                        : i === 1
-                        ? 'bg-blue-500 text-white'
-                        : 'bg-slate-900 text-white'
-                      }`}
-                    >
-                        S&apos;inscrire maintenant
-                    </InteractiveHoverButton>
+                <InteractiveHoverButton 
+                  onClick={() => redirectToWhatsApp(plan)}
+                  className="bg-secondary text-slate-900 text-sm py-3 font-bold w-fit px-6"
+                >
+                  S&apos;inscrire maintenant
+                </InteractiveHoverButton>
+              
                   </td>
                 ))}
               </tr>
@@ -306,16 +301,10 @@ Merci d'avance !`;
               </div>
 
               {/* CTA Button */}
-              <div className="p-4 sm:p-6 pt-2 sm:pt-2">
+              <div className="mt-auto pt-4">
                 <InteractiveHoverButton 
                   onClick={() => redirectToWhatsApp(plan)}
-                  className={`w-full text-sm ${
-                    planIndex === 0 
-                      ? 'bg-[#ff5c00] text-white' 
-                      : planIndex === 1
-                      ? 'bg-blue-500 text-white'
-                      : 'bg-slate-900 text-white'
-                  }`}
+                  className="bg-secondary text-slate-900 text-sm py-3 font-bold w-fit px-6"
                 >
                   S&apos;inscrire maintenant
                 </InteractiveHoverButton>

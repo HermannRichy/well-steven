@@ -6,8 +6,9 @@ import {
   Network, 
   MonitorCheck, 
   HandHelping,
-  ArrowRight
 } from 'lucide-react';
+import Link from 'next/link';
+import { InteractiveHoverButton } from '../ui/interactive-hover-button';
 
 const ServicePage: React.FC = () => {
   const services = [
@@ -158,28 +159,9 @@ const ServicePage: React.FC = () => {
                 <p className="text-slate-500 leading-relaxed text-sm lg:text-[16px] font-light max-w-full lg:max-w-[280px]">
                   {service.description}
                 </p>
-                <motion.a 
-                  href="#" 
-                  className="inline-flex items-center text-xs font-black uppercase tracking-widest text-slate-900 group/link pt-2 lg:pt-4"
-                  whileHover="hover"
-                >
-                  <span className="relative">
-                    Découvrir
-                    <motion.span 
-                      className="absolute -bottom-1 left-0 w-0 h-[1px] bg-slate-900"
-                      variants={{
-                        hover: { width: "100%", transition: { duration: 0.4, ease: "circOut" } }
-                      }}
-                    />
-                  </span>
-                  <motion.div
-                    variants={{
-                      hover: { x: 8, transition: { type: "spring", stiffness: 300 } }
-                    }}
-                  >
-                    <ArrowRight className="ml-2 lg:ml-3 w-3 h-3 lg:w-4 lg:h-4" />
-                  </motion.div>
-                </motion.a>
+                  <InteractiveHoverButton className="bg-secondary text-sm">
+                    <Link href="/formations">Découvrir</Link>
+                  </InteractiveHoverButton>
               </div>
             </motion.div>
           ))}

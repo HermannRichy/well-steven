@@ -15,9 +15,9 @@ interface TestimonialData {
 const testimonials: TestimonialData[] = [
   {
     id: 1,
-    title: "« Bon service »",
+    title: "« Un service fiable et rassurant »",
     content:
-      "Lorem ipsum dolor sit amet consectetur. Nibh hac lacinia dolor vitae mauris. Nisl amet aliquam sem scelerisque et tortor.",
+      "J’avais besoin d’un accompagnement clair et structuré, et j’ai été agréablement surpris par la qualité du service. Tout est bien expliqué, fluide et professionnel. Je recommande sans hésiter.",
     author: "Rebecca Edwards",
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150",
@@ -25,9 +25,9 @@ const testimonials: TestimonialData[] = [
   },
   {
     id: 2,
-    title: "« Très professionnel »",
+    title: "« Très professionnel du début à la fin »",
     content:
-      "Lorem ipsum dolor sit amet consectetur. Nibh hac lacinia dolor vitae mauris. Nisl amet aliquam sem scelerisque et tortor.",
+      "L’équipe est à l’écoute et répond rapidement. J’ai particulièrement apprécié le sérieux et la transparence dans chaque étape. Une vraie valeur ajoutée.",
     author: "Lolita Bocharova",
     avatar:
       "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150&h=150",
@@ -35,9 +35,9 @@ const testimonials: TestimonialData[] = [
   },
   {
     id: 3,
-    title: "« Satisfait du résultat »",
+    title: "« Résultat au-delà de mes attentes »",
     content:
-      "Lorem ipsum dolor sit amet consectetur. Nibh hac lacinia dolor vitae mauris. Nisl amet aliquam sem scelerisque et tortor.",
+      "Je ne m’attendais pas à un tel niveau de qualité. Le service est bien pensé, moderne et surtout très efficace. Cela m’a fait gagner énormément de temps.",
     author: "Hermann Gorshkov",
     avatar:
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150&h=150",
@@ -45,9 +45,9 @@ const testimonials: TestimonialData[] = [
   },
   {
     id: 4,
-    title: "« Excellent accompagnement »",
+    title: "« Un accompagnement humain et sérieux »",
     content:
-      "Lorem ipsum dolor sit amet consectetur. Nibh hac lacinia dolor vitae mauris. Nisl amet aliquam sem scelerisque et tortor.",
+      "On se sent réellement accompagné, pas juste comme un simple client. Les conseils sont pertinents et adaptés à mes besoins. Une excellente expérience.",
     author: "Jean Dupont",
     avatar:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150",

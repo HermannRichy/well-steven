@@ -58,7 +58,7 @@ const trainings: FormationPlan[] = [
       "Copie de la pièce d'identité",
       "Copie de l'acte de naissance sécurisé",
       "Fiche d'inscription à retirer au secrétariat",
-      "Copie de papier RAM"
+      "Un paquet de papier RAM"
     ],
     targetAudience: [
       "étudiants et jeunes diplômés",
@@ -92,7 +92,7 @@ const trainings: FormationPlan[] = [
       "Copie de la pièce d'identité", 
       "Copie de l'acte de naissance sécurisé",
       "Fiche d'inscription à retirer au secrétariat",
-      "Copie de papier RAM"
+      "Un paquet de papier RAM"
     ],
     targetAudience: [
       "étudiants et jeunes diplômés",
@@ -123,7 +123,7 @@ const trainings: FormationPlan[] = [
       "Copie de la pièce d'identité",
       "Copie de l'acte de naissance sécurisé",
       "Fiche d'inscription à retirer au secrétariat",
-      "Copie de papier RAM"
+      "Un paquet de papier RAM"
     ],
     targetAudience: [
       "étudiants et jeunes diplômés",
@@ -155,7 +155,7 @@ const trainings: FormationPlan[] = [
       "Copie de la pièce d'identité",
       "Copie de l'acte de naissance sécurisé",
       "Fiche d'inscription à retirer au secrétariat",
-      "Copie de papier RAM"
+      "Un paquet de papier RAM"
     ],
     targetAudience: [
       "Agents d'ONG",
@@ -183,7 +183,7 @@ const trainings: FormationPlan[] = [
       "Copie de la pièce d'identité",
       "Copie de l'acte de naissance sécurisé",
       "Fiche d'inscription à retirer au secrétariat",
-      "Copie de papier RAM"
+      "Un paquet de papier RAM"
     ],
     targetAudience: [
       "étudiants et jeunes diplômés",
@@ -411,13 +411,13 @@ Merci d'avance !`;
 
               {/* SECTION BOUTON */}
               <div className="mt-auto pt-4">
-  <InteractiveHoverButton 
-    onClick={() => redirectToWhatsApp(plan)}
-    className="bg-secondary text-slate-900 text-sm py-3 font-bold w-fit px-6"
-  >
-    S&apos;inscrire maintenant
-  </InteractiveHoverButton>
-</div>
+                <InteractiveHoverButton 
+                  onClick={() => redirectToWhatsApp(plan)}
+                  className="bg-secondary text-slate-900 text-sm py-3 font-bold w-fit px-6"
+                >
+                  S&apos;inscrire maintenant
+                </InteractiveHoverButton>
+              </div>
 
               {/* Dossier d'inscription */}
               <div className={`mt-6 pt-6 border-t ${plan.isPopular ? 'border-white/10' : 'border-slate-200'}`}>
