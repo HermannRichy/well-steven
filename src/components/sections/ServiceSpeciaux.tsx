@@ -44,7 +44,7 @@ const ServiceSpeciaux: React.FC = () => {
               className="relative h-[350px] md:h-[450px] lg:h-[600px] rounded-2xl lg:rounded-3xl overflow-hidden"
             >
               <Image
-                src="/images/finance.jpg"
+                src="/Services/service-4.jpg"
                 alt="Finance illustration"
                 fill
                 className="object-cover rounded-2xl lg:rounded-3xl"

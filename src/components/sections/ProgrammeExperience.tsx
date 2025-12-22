@@ -95,7 +95,7 @@ Merci d'avance !`;
                   10 000 F
                 </span>
                 <span className="text-gray-500 mb-1 text-xs sm:text-sm">
-                  frais d'inscription
+                  frais d&apos;inscription
                 </span>
               </div>
             </div>
@@ -106,7 +106,7 @@ Merci d'avance !`;
 
             <p className="text-gray-600 leading-relaxed text-base md:text-lg max-w-xl">
               Le cabinet <strong>WELL STEVEN SARL</strong> lance un programme
-              d'accompagnement professionnel rigoureux, fondé sur une immersion
+              d&apos;accompagnement professionnel rigoureux, fondé sur une immersion
               totale dans la pratique réelle du métier de comptable et fiscaliste,
               exactement comme dans un cabinet professionnel.
             </p>
@@ -145,12 +145,12 @@ Merci d'avance !`;
 
             <div className="bg-orange-50 border border-orange-100 rounded-2xl p-4 md:p-6">
               <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                ✔️ À l'issue du programme, chaque participant reçoit une{' '}
-                <strong>attestation de travail d'une durée d'un an</strong>,
-                délivrée par l'entreprise suivie.
+                ✔️ À l&apos;issue du programme, chaque participant reçoit une{' '}
+                <strong>attestation de travail d&apos;une durée d'un an</strong>,
+                délivrée par l&apos;entreprise suivie.
                 <br /><br />
                 ✔️ Le programme est accessible à distance, même hors de Cotonou
-                ou hors du Bénin, avec le même niveau d'exigence, de suivi et de rigueur.
+                ou hors du Bénin, avec le même niveau d&apos;exigence, de suivi et de rigueur.
               </p>
             </div>
 

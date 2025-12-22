@@ -3,7 +3,7 @@ export default function Blog() {
   {
     title: "5 erreurs de planification financière pour les petites entreprises",
     date: "4 juillet 2025",
-    img: "/images/5erreurs.webp"
+    img: "/images/planification.jpg"
   },
     {
       title: "Comprendre vos chiffres : conseils d’experts pour les entrepreneurs",
