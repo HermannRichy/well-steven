@@ -241,11 +241,11 @@ Je souhaiterais intégrer ce programme. Pourriez-vous me donner plus d'informati
           
           <div className="flex flex-col items-center gap-4">
             <InteractiveHoverButton 
-                              onClick={() => redirectToWhatsApp}
-                              className="bg-secondary text-slate-900 text-sm py-3 font-bold w-fit"
-                            >
-                              Intégrez le programme 
-                            </InteractiveHoverButton>
+  onClick={redirectToWhatsApp}  
+  className="bg-secondary text-slate-900 text-sm py-3 font-bold w-fit"
+>
+  Intégrez le programme 
+</InteractiveHoverButton>
             <p className="text-sm font-medium text-orange-500 uppercase tracking-widest">
               WELL STEVEN SARL — L’excellence comptable au service de votre avenir professionnel.
             </p>

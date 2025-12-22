@@ -177,7 +177,7 @@ const FeaturesGrid: React.FC = () => {
             className="max-w-3xl space-y-6 lg:space-y-10"
           >
             <span className="text-[10px] lg:text-[11px] font-black uppercase tracking-[0.4em] text-white/90 block">
-              Cabinet d&apos;Assistance Comptable, Fiscale et de Formation
+                CABINET D&apos;ASSISTANCE COMPTABLE, FISCALE, ET DE FORMATION PROFESSIONNELLE
             </span>
             <h2 className="text-2xl font-momo lg:text-3xl xl:text-4xl 2xl:text-7xl font-bold text-white leading-[1.05] tracking-tight">
               Sécuriser vos obligations. Structurer votre gestion. Développer vos compétences.

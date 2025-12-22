@@ -258,7 +258,7 @@ Merci d'avance !`;
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-12 md:mb-16 gap-6 md:gap-8">
           <div className="space-y-3 md:space-y-4 w-full lg:w-2/3">
             <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.3em] md:tracking-[0.4em] text-slate-500 block">
-              NOTRE PLAN FORMATION
+              NOTRE PLAN DE FORMATION
             </span>
             <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight">
               Formations abordables avec un suivi de qualité supérieure

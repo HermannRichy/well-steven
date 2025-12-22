@@ -6,7 +6,7 @@ export default function ServiceHero() {
             {/* Texte */}
             <div className="mx-auto max-w-4xl px-4 md:px-6 text-center">
                 <span className="font-momo block text-xs md:text-sm font-semibold tracking-widest text-neutral-500">
-                    CABINET D&apos;ASSISTANCE COMPTABLE, FISCALE ET DE FORMATION
+                    CABINET D&apos;ASSISTANCE COMPTABLE, FISCALE, ET DE FORMATION PROFESSIONNELLE
                 </span>
 
                 <h1 className="font-momo mt-4 md:mt-6 text-2xl md:text-3xl lg:text-5xl font-extrabold leading-tight tracking-tight text-neutral-900">
