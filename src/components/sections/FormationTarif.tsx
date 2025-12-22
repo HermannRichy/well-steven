@@ -6,8 +6,8 @@ const FormationTarif: React.FC = () => {
   const plans = [
     { 
       id: "gestion-comptable",
-      name: " Gestion Comptable", 
-      description: "Former des professionnels capables de mettre en place et contrôler la comptabilité",
+      name: "Gestion Comptable", 
+      description: "Formation complète en comptabilité d'entreprise",
       price: "100 000", 
       reg: "5 000",
       badge: "Certification",
@@ -15,22 +15,22 @@ const FormationTarif: React.FC = () => {
       mode: "Présentiel et en ligne"
     },
     { 
-      id: "ebnl",
-      name: "Spécialiste EBNL", 
-      description: "Maîtriser la comptabilité et fiscalité des ONG, associations et projets",
-      price: "150 000", 
-      reg: "10 000",
-      badge: "Spécialisation",
-      duration: "Formation spécialisée",
+      id: "secretariat",
+      name: "Secrétariat Comptable", 
+      description: "Formation polyvalente administrative et comptable",
+      price: "100 000", 
+      reg: "5 000",
+      badge: "Polyvalent",
+      duration: "04 mois intensif",
       mode: "Présentiel et en ligne"
     },
     { 
-      id: "logiciels",
-      name: "Formation Logiciels", 
-      description: "Formation pratique sur Perfecto, Hypersoft, Sage Comptabilité",
-      price: "70 000", 
+      id: "rh",
+      name: "Ressources Humaines", 
+      description: "Gestion du personnel et paie informatisée",
+      price: "100 000", 
       reg: "5 000",
-      badge: "Essentiel",
+      badge: "RH",
       duration: "Formation intensive",
       mode: "Présentiel et en ligne"
     }
@@ -38,53 +38,77 @@ const FormationTarif: React.FC = () => {
 
   const features = [
     { 
-      name: "Support de cours numériques", 
+      name: "Formation complète en comptabilité d'entreprise", 
       gestion: true, 
-      ebnl: true, 
-      logiciels: true 
+      secretariat: true, 
+      rh: false 
     },
     { 
-      name: "Attestation de fin de formation", 
-      gestion: true, 
-      ebnl: true, 
-      logiciels: true 
-    },
-    { 
-      name: "Accès aux logiciels (Perfecto/Hypersoft/Sage)", 
-      gestion: true, 
-      ebnl: true, 
-      logiciels: true 
-    },
-    { 
-      name: "Projets pratiques réels", 
-      gestion: true, 
-      ebnl: true, 
-      logiciels: false 
-    },
-    { 
-      name: "Accompagnement post-formation", 
-      gestion: true, 
-      ebnl: true, 
-      logiciels: false 
-    },
-    { 
-      name: "Télédéclarations fiscales réelles", 
-      gestion: true, 
-      ebnl: false, 
-      logiciels: false 
-    },
-    { 
-      name: "Spécialisation Bailleurs de fonds", 
+      name: "Formation en secrétariat administratif et comptable", 
       gestion: false, 
-      ebnl: true, 
-      logiciels: false 
+      secretariat: true, 
+      rh: false 
     },
     { 
-      name: "Gestion spécifique ONG/Associations", 
+      name: "Formation en gestion des ressources humaines", 
       gestion: false, 
-      ebnl: true, 
-      logiciels: false 
+      secretariat: false, 
+      rh: true 
     },
+    { 
+      name: "Utilisation des logiciels comptables (Perfecto, Hypersoft)", 
+      gestion: true, 
+      secretariat: true, 
+      rh: false 
+    },
+    { 
+      name: "Utilisation de Sage Paie RH", 
+      gestion: false, 
+      secretariat: false, 
+      rh: true 
+    },
+    { 
+      name: "Maîtrise du SYSCOHADA révisé", 
+      gestion: true, 
+      secretariat: true, 
+      rh: false 
+    },
+    { 
+      name: "Télédéclarations fiscales et sociales", 
+      gestion: true, 
+      secretariat: true, 
+      rh: false 
+    },
+    { 
+      name: "Gestion des déclarations sociales (CNPS)", 
+      gestion: true, 
+      secretariat: true, 
+      rh: true 
+    },
+    { 
+      name: "Élaboration des états financiers", 
+      gestion: true, 
+      secretariat: true, 
+      rh: false 
+    },
+    { 
+      name: "Gestion administrative du personnel", 
+      gestion: false, 
+      secretariat: false, 
+      rh: true 
+    },
+    { 
+      name: "Attestation/Certificat de formation", 
+      gestion: true, 
+      secretariat: true, 
+      rh: true 
+    },
+    { 
+      name: "Support de cours et accompagnement", 
+      gestion: true, 
+      secretariat: true, 
+      rh: true 
+    }
   ];
 
   const CheckIcon = () => (
@@ -104,7 +128,7 @@ const FormationTarif: React.FC = () => {
   );
 
   const generateWhatsAppMessage = (plan: typeof plans[0]) => {
-    const message = `Bonjour, j'espère que vous allez bien ! 
+    const message = `Bonjour WELL STEVEN ! 
 
 Je suis intéressé(e) par votre formation : 
 
@@ -117,7 +141,6 @@ Je suis intéressé(e) par votre formation :
 
 **Prix :** ${plan.price} FCFA
 **Frais d'inscription :** ${plan.reg} FCFA
-${plan.id === "logiciels" ? 'ou 35 000 FCFA par module' : ''}
 
 Je souhaiterais m'inscrire à cette formation. Pourriez-vous me donner plus d'informations sur les modalités d'inscription ?
 
@@ -153,7 +176,7 @@ Merci d'avance !`;
               <tr className="border-t border-slate-200">
                 <th className="py-8 px-6 lg:px-8 text-left text-lg lg:text-xl font-bold text-slate-900 w-1/4 align-middle bg-white rounded-tl-2xl">
                   <span className="text-slate-500 text-sm font-normal block mb-2">FONCTIONNALITÉS</span>
-                  Ce qui est inclus
+                  Contenus de formation
                 </th>
                 {plans.map((plan, i) => (
                   <th key={i} className={`py-8 px-6 lg:px-8 text-center border-l border-slate-200 w-1/4 bg-white`}>
@@ -163,7 +186,7 @@ Merci d'avance !`;
                           <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 ${
                             i === 0 ? 'bg-[#ff5c00] text-white' : 
                             i === 1 ? 'bg-blue-500 text-white' : 
-                            'bg-slate-900 text-white'
+                            'bg-green-500 text-white'
                           }`}>
                             {plan.badge}
                           </span>
@@ -179,11 +202,6 @@ Merci d'avance !`;
                         <span className="text-xs lg:text-[13px] text-[#ff5c00] font-bold block">
                           + {plan.reg} FCFA d&apos;inscription
                         </span>
-                        {plan.id === "logiciels" && (
-                          <p className="text-xs text-slate-500 mt-1">
-                            35 000 FCFA par module
-                          </p>
-                        )}
                       </div>
                     </div>
                   </th>
@@ -200,10 +218,10 @@ Merci d'avance !`;
                     {feature.gestion ? <CheckIcon /> : <CrossIcon />}
                   </td>
                   <td className="py-4 px-6 lg:px-8 text-center border-l border-slate-200">
-                    {feature.ebnl ? <CheckIcon /> : <CrossIcon />}
+                    {feature.secretariat ? <CheckIcon /> : <CrossIcon />}
                   </td>
                   <td className="py-4 px-6 lg:px-8 text-center border-l border-slate-200">
-                    {feature.logiciels ? <CheckIcon /> : <CrossIcon />}
+                    {feature.rh ? <CheckIcon /> : <CrossIcon />}
                   </td>
                 </tr>
               ))}
@@ -214,13 +232,14 @@ Merci d'avance !`;
                 </td>
                 {plans.map((plan, i) => (
                   <td key={i} className={`py-6 px-6 lg:px-8 text-center border-l border-slate-200 ${i === 2 ? 'rounded-br-2xl' : ''}`}>
-                <InteractiveHoverButton 
-                  onClick={() => redirectToWhatsApp(plan)}
-                  className="bg-secondary text-slate-900 text-sm py-3 font-bold w-fit px-6"
-                >
-                  S&apos;inscrire maintenant
-                </InteractiveHoverButton>
-              
+                    <div className="flex justify-center">
+                      <InteractiveHoverButton 
+                        onClick={() => redirectToWhatsApp(plan)}
+                        className="bg-secondary text-slate-900 text-sm py-3 font-bold w-fit px-6"
+                      >
+                        S&apos;inscrire maintenant
+                      </InteractiveHoverButton>
+                    </div>
                   </td>
                 ))}
               </tr>
@@ -236,14 +255,14 @@ Merci d'avance !`;
               <div className={`p-4 sm:p-6 text-center ${
                 planIndex === 0 ? 'bg-[#ff5c00]/10' : 
                 planIndex === 1 ? 'bg-blue-500/10' : 
-                'bg-slate-100'
+                'bg-green-500/10'
               }`}>
                 <div className="flex flex-col items-center">
                   {plan.badge && (
                     <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 ${
                       planIndex === 0 ? 'bg-[#ff5c00] text-white' : 
                       planIndex === 1 ? 'bg-blue-500 text-white' : 
-                      'bg-slate-900 text-white'
+                      'bg-green-500 text-white'
                     }`}>
                       {plan.badge}
                     </span>
@@ -259,11 +278,6 @@ Merci d'avance !`;
                     <span className="text-sm text-[#ff5c00] font-bold block">
                       + {plan.reg} FCFA d&apos;inscription
                     </span>
-                    {plan.id === "logiciels" && (
-                      <p className="text-xs text-slate-500 mt-1">
-                        35 000 FCFA par module
-                      </p>
-                    )}
                   </div>
 
                   {/* Durée et Mode */}
@@ -291,8 +305,8 @@ Merci d'avance !`;
                       </span>
                       <div className="flex-shrink-0">
                         {(planIndex === 0 && feature.gestion) || 
-                         (planIndex === 1 && feature.ebnl) || 
-                         (planIndex === 2 && feature.logiciels) ? 
+                         (planIndex === 1 && feature.secretariat) || 
+                         (planIndex === 2 && feature.rh) ? 
                          <CheckIcon /> : <CrossIcon />}
                       </div>
                     </div>
@@ -301,10 +315,10 @@ Merci d'avance !`;
               </div>
 
               {/* CTA Button */}
-              <div className="mt-auto pt-4">
+              <div className="p-4 sm:p-6 pt-2 sm:pt-2">
                 <InteractiveHoverButton 
                   onClick={() => redirectToWhatsApp(plan)}
-                  className="bg-secondary text-slate-900 text-sm py-3 font-bold w-fit px-6"
+                  className="bg-secondary text-slate-900 text-sm py-3 font-bold w-full"
                 >
                   S&apos;inscrire maintenant
                 </InteractiveHoverButton>
