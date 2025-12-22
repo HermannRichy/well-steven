@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { TextReveal } from "../ui/text-reveal";
 
 export default function WhoWeAre() {
     return (
@@ -31,7 +30,7 @@ export default function WhoWeAre() {
                             className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                         {/* Cercle orange animé au survol */}
-                        <div className="absolute bottom-2 right-1 w-10 h-10 rounded-full bg-primary shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl">
+                        <div className="absolute bottom-2 right-1 w-10 h-10 rounded-full bg-orange-500 shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl">
                             {/* Effet de lumière intérieure */}
                             <div className="absolute top-2 left-2 w-3 h-3 rounded-full bg-white/50"></div>
                             {/* Animation de pulsation légère */}
@@ -51,7 +50,7 @@ export default function WhoWeAre() {
                             className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                         {/* Cercle orange animé au survol */}
-                        <div className="absolute bottom-2 right-1 w-10 h-10 rounded-full bg-primary shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl">
+                        <div className="absolute bottom-2 right-1 w-10 h-10 rounded-full bg-orange-500 shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl">
                             {/* Effet de lumière intérieure */}
                             <div className="absolute top-2 left-2 w-3 h-3 rounded-full bg-white/50"></div>
                             {/* Animation de pulsation légère */}
@@ -81,7 +80,6 @@ export default function WhoWeAre() {
                 </div>
             </aside>
             
-            {/* Ajouter une animation personnalisée dans le CSS global si besoin */}
             <style jsx global>{`
                 @keyframes pulse-slow {
                     0%, 100% { opacity: 0.3; }
