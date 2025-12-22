@@ -1,3 +1,4 @@
+"use client";
 import { Asterisk } from "lucide-react";
 import Link from "next/link";
 import { InteractiveHoverButton } from "../ui/interactive-hover-button";
@@ -75,7 +76,7 @@ export default function Benefit() {
 
                     {/* Expérience professionnelle */}
                     <div
-                        className="relative min-h-80 rounded-2xl overflow-hidden bg-cover bg-center lg:col-span-3"
+                        className="relative min-h-80 rounded-2xl overflow-hidden bg-cover bg-center lg:col-span-3 group"
                         style={{ backgroundImage: "url('/images/hero1.jpg')" }}
                     >
                         <div className="absolute inset-0 bg-black/50" />
@@ -84,6 +85,15 @@ export default function Benefit() {
                                 Expérience professionnelle
                             </p>
                         </div>
+                        {/* Cercle orange animé */}
+                        <div className="absolute bottom-2 right-1 w-10 h-10 rounded-full bg-orange-500 shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl">
+                            {/* Effet de lumière intérieure */}
+                            <div className="absolute top-2 left-2 w-3 h-3 rounded-full bg-white/50"></div>
+                            {/* Animation de pulsation légère */}
+                            <div className="absolute inset-0 rounded-full animate-pulse-slow bg-amber-400 opacity-30"></div>
+                        </div>
+                        {/* Glow effect autour du cercle */}
+                        <div className="absolute bottom-2 right-2 w-10 h-10 rounded-full animate-ping bg-orange-400 opacity-20"></div>
                     </div>
 
                     {/* Statistique clients */}
@@ -104,18 +114,37 @@ export default function Benefit() {
                         </p>
                     </div>
 
-                    {/* Image */}
-                    <div className="rounded-2xl overflow-hidden min-h-80 lg:col-span-4">
+                    {/* Image avec animation */}
+                    <div className="rounded-2xl overflow-hidden min-h-80 lg:col-span-4 relative group">
                         <Image
                             src="/images/hero2.jpg"
                             alt="Galerie"
                             width={400}
                             height={400}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         />
+                        {/* Cercle orange animé */}
+                        <div className="absolute bottom-2 right-1 w-10 h-10 rounded-full bg-orange-500 shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl">
+                            {/* Effet de lumière intérieure */}
+                            <div className="absolute top-2 left-2 w-3 h-3 rounded-full bg-white/50"></div>
+                            {/* Animation de pulsation légère */}
+                            <div className="absolute inset-0 rounded-full animate-pulse-slow bg-amber-400 opacity-30"></div>
+                        </div>
+                        {/* Glow effect autour du cercle */}
+                        <div className="absolute bottom-2 right-2 w-10 h-10 rounded-full animate-ping bg-orange-400 opacity-20"></div>
                     </div>
                 </div>
             </aside>
+            
+            <style jsx global>{`
+                @keyframes pulse-slow {
+                    0%, 100% { opacity: 0.3; }
+                    50% { opacity: 0.6; }
+                }
+                .animate-pulse-slow {
+                    animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+                }
+            `}</style>
         </section>
     );
 }
