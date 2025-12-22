@@ -10,23 +10,23 @@ const ServiceSpeciaux: React.FC = () => {
   const services = [
     {
       id: 0,
-      title: "Stratégie fiscale & conformité",
-      description: "Nous vous accompagnons dans l'anticipation, l'organisation et le respect de vos obligations fiscales, en mettant en place des solutions adaptées à votre situation et à votre secteur d'activité."
+      title: "Assistance comptable",
+      description: "Organisation et tenue de la comptabilité. Suivi comptable périodique. Élaboration et analyse des états financiers. Mise en place de procédures comptables. Assistance aux travaux de fin d'exercice. Appui au contrôle interne. 👉 Objectif : garantir des informations financières exactes et exploitables."
     },
     {
       id: 1,
-      title: "Gestion de la paie & obligations sociales",
-      description: "Nous assurons une gestion fluide et conforme de la paie et des déclarations sociales, afin de garantir la sérénité de vos équipes et la conformité de votre entreprise."
+      title: "Assistance fiscale",
+      description: "Déclarations fiscales et sociales. Suivi des échéances fiscales. Assistance lors des contrôles fiscaux. Optimisation fiscale dans le respect des textes. Conseil en fiscalité des entreprises. 👉 Objectif : sécuriser la conformité fiscale et réduire les risques."
     },
     {
       id: 2,
-      title: "Pilotage comptable",
-      description: "Au-delà de la tenue des comptes, nous vous offrons une lecture claire de vos données financières pour mieux suivre vos performances et orienter vos décisions stratégiques."
+      title: "Nos valeurs fondamentales",
+      description: "Rigueur professionnelle - Confidentialité - Intégrité - Fiabilité - Pédagogie. Ces valeurs guident chacune de nos interventions."
     },
     {
       id: 3,
-      title: "Contrôle, audit & fiabilité financière",
-      description: "Nous analysons vos processus financiers pour renforcer la transparence, détecter les risques potentiels et améliorer la fiabilité globale de votre organisation."
+      title: "Nos résultats (chiffres clés)",
+      description: "👥 +500 clients accompagnés 📅 +10 ans d'expérience cumulée 💼 +1 000 formations délivrées ⭐ 95 % de clients satisfaits"
     }
   ];
 
