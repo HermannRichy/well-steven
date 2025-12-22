@@ -22,23 +22,34 @@ export default function Benefit() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-10 gap-6 mt-12">
                     {/* Notre expérience */}
-                    <div
-                        className="relative min-h-80 rounded-2xl overflow-hidden bg-cover bg-center lg:col-span-4"
-                        style={{ backgroundImage: "url('/images/hero1.jpg')" }}
-                    >
-                        <div className="absolute inset-0 bg-black/40" />
-                        <div className="relative z-10 flex items-end h-full p-6">
-                            <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-4">
-                                <h3 className="text-white font-momo text-lg">
-                                    Notre expérience
-                                </h3>
-                                <p className="text-white/80 text-sm mt-2">
-                                    Plus de 10 ans d'expertise en comptabilité,
-                                    gestion financière et formations
-                                    professionnelles.
-                                </p>
-                            </div>
+                    <div className="relative min-h-80 rounded-2xl overflow-hidden bg-cover bg-center lg:col-span-4 group">
+    <div 
+        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+        style={{ backgroundImage: "url('/images/hero1.jpg')" }}
+    />
+    <div className="absolute inset-0 bg-black/40" />
+    <div className="relative z-10 flex items-end h-full p-6">
+        <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-4">
+            <h3 className="text-white font-momo text-lg">
+                Notre expérience
+            </h3>
+            <p className="text-white/80 text-sm mt-2">
+                Plus de 10 ans d'expertise en comptabilité,
+                gestion financière et formations
+                professionnelles.
+            </p>
+        </div>
+    </div>
+    
+    {/* Cercle orange animé */}
+    <div className="absolute bottom-2 right-1 w-10 h-10 rounded-full bg-orange-500 shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl">
+                            {/* Effet de lumière intérieure */}
+                            <div className="absolute top-2 left-2 w-3 h-3 rounded-full bg-white/50"></div>
+                            {/* Animation de pulsation légère */}
+                            <div className="absolute inset-0 rounded-full animate-pulse-slow bg-amber-400 opacity-30"></div>
                         </div>
+                        {/* Glow effect autour du cercle */}
+                        <div className="absolute bottom-2 right-2 w-10 h-10 rounded-full animate-ping bg-orange-400 opacity-20"></div>
                     </div>
 
                     {/* Notre objectif */}

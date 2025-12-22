@@ -10,29 +10,14 @@ const ServiceSpeciaux: React.FC = () => {
   const services = [
     {
       id: 0,
-      title: "Expertise sectorielle approfondie",
-      description: "Une parfaite maîtrise des réalités comptables et fiscales des entreprises, établissements scolaires, ONG, associations et professionnels."
+      title: "Assistance comptable",
+      description: "Organisation et tenue de la comptabilité. Suivi comptable périodique. Élaboration et analyse des états financiers. Mise en place de procédures comptables. Assistance aux travaux de fin d'exercice. Appui au contrôle interne. Objectif : garantir des informations financières exactes et exploitables."
     },
     {
       id: 1,
-      title: "Des experts qualifiés et expérimentés",
-      description: "Une équipe de professionnels rigoureux, engagés et à jour des exigences réglementaires et fiscales."
+      title: "Assistance fiscale",
+      description: "Déclarations fiscales et sociales. Suivi des échéances fiscales. Assistance lors des contrôles fiscaux. Optimisation fiscale dans le respect des textes. Conseil en fiscalité des entreprises.  Objectif : sécuriser la conformité fiscale et réduire les risques."
     },
-    {
-      id: 2,
-      title: "Assistance comptable et fiscale digitalisée (cloud)",
-      description: "Un suivi moderne, sécurisé et accessible en temps réel pour une meilleure prise de décision."
-    },
-    {
-      id: 3,
-      title: "Solutions comptables et fiscales sur mesure",
-      description: "Des dispositifs adaptés à votre statut juridique, à votre secteur d'activité et à vos objectifs stratégiques."
-    },
-    {
-      id: 4,
-      title: "Accompagnement client dédié et personnalisé",
-      description: "Un suivi de proximité, des conseils stratégiques continus et une réelle disponibilité pour vos enjeux."
-    }
   ];
 
   return (
@@ -67,7 +52,7 @@ const ServiceSpeciaux: React.FC = () => {
                 transition={{ duration: 0.6 }}
                 className="text-3xl font-momo lg:text-4xl xl:text-5xl font-bold text-slate-900 mb-3 lg:mb-4"
               >
-                NOTRE AVANTAGE
+                Nos Domaines D'expertise
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -75,7 +60,7 @@ const ServiceSpeciaux: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-slate-600 text-base lg:text-lg max-w-lg"
               >
-                Bâtir des organisations solides grâce à une gestion comptable et fiscale d'excellence
+                Des fondations financières solides pour une croissance maîtrisée.
               </motion.p>
             </div>
 
