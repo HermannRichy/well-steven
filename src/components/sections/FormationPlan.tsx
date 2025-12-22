@@ -412,11 +412,11 @@ Merci d'avance !`;
               {/* SECTION BOUTON */}
               <div className="mt-auto pt-4">
                 <InteractiveHoverButton 
-                  onClick={() => redirectToWhatsApp(plan)}
-                  className="bg-secondary text-slate-900 text-sm py-3 font-bold w-fit px-6"
-                >
-                  S&apos;inscrire maintenant
-                </InteractiveHoverButton>
+                                  onClick={() => redirectToWhatsApp(plan)}
+                                  className="bg-secondary text-slate-900 text-sm py-3 font-bold w-full"
+                                >
+                                  S&apos;inscrire maintenant
+                                </InteractiveHoverButton>
               </div>
 
               {/* Dossier d'inscription */}

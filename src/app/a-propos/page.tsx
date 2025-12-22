@@ -6,6 +6,7 @@ import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
 import Blog from "@/components/sections/Blog";
+import EquipePage from "@/components/sections/Team";
 
 export default function AboutPage() {
   return (
@@ -15,6 +16,7 @@ export default function AboutPage() {
       <Stats />
       <Features />
       <WhyChooseUs />
+      <EquipePage/>
       <Testimonials />
       <FAQ />
       <Blog />
