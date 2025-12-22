@@ -36,7 +36,7 @@ Je souhaiterais intégrer ce programme. Pourriez-vous me donner plus d'informati
   };
 
   return (
-    <section className="bg-[#fcfcfc] py-12 md:py-20">
+    <section className="bg-[#fcfcfc] py-8 md:py-5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* HEADER SECTION */}
