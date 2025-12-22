@@ -38,7 +38,7 @@ const CTASection: React.FC = () => {
             Sécuriser vos obligations. Structurer votre gestion. Développer vos compétences.
           </h2>
           <InteractiveHoverButton className="bg-secondary text-sm">
-              <Link href="#">Planifiez une consultation</Link>
+              <Link href="/contact">Planifiez une consultation</Link>
           </InteractiveHoverButton>
         </motion.div>
       </div>

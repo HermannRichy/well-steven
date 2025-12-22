@@ -111,7 +111,7 @@ const FeaturesGrid: React.FC = () => {
 
               {/* Bouton CTA */}
               <InteractiveHoverButton className="bg-secondary text-sm">
-                <Link href="#">Planifiez une consultation</Link>
+                <Link href="/contact">Planifiez une consultation</Link>
               </InteractiveHoverButton>
               <div className="flex-1 hidden lg:block"></div>
             </motion.div>
@@ -184,7 +184,7 @@ const FeaturesGrid: React.FC = () => {
             </h2>
             
             <InteractiveHoverButton className="bg-secondary text-sm">
-              <Link href="#">Planifiez une consultation</Link>
+              <Link href="/contact">Planifiez une consultation</Link>
             </InteractiveHoverButton>
           </motion.div>
         </div>
