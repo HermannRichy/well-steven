@@ -31,7 +31,7 @@ export default function ContactFormSection() {
       `*Message :*\n${formData.message}`;
 
     // Encodage pour WhatsApp
-    const url = `https://wa.me/22490479512?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/22990479512?text=${encodeURIComponent(message)}`;
 
     // Redirection vers WhatsApp
     window.open(url, '_blank', 'noopener,noreferrer');

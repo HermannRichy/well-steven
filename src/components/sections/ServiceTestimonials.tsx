@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 
 interface TestimonialData {
@@ -18,9 +17,9 @@ const testimonials: TestimonialData[] = [
     title: "« Un service fiable et rassurant »",
     content:
       "J’avais besoin d’un accompagnement clair et structuré, et j’ai été agréablement surpris par la qualité du service. Tout est bien expliqué, fluide et professionnel. Je recommande sans hésiter.",
-    author: "Rebecca Edwards",
+    author: "Zinsou Rebecca",
     avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150",
+      "https://i.pinimg.com/736x/bd/c6/24/bdc6247d1c8ebafd95db73f665adabd4.jpg",
     rating: 5,
   },
   {
@@ -28,9 +27,9 @@ const testimonials: TestimonialData[] = [
     title: "« Très professionnel du début à la fin »",
     content:
       "L’équipe est à l’écoute et répond rapidement. J’ai particulièrement apprécié le sérieux et la transparence dans chaque étape. Une vraie valeur ajoutée.",
-    author: "Lolita Bocharova",
+    author: "Gbaguidi Bernice",
     avatar:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150&h=150",
+      "https://i.pinimg.com/1200x/3e/e6/0d/3ee60daf615fed89180c5675aff3fa15.jpg",
     rating: 5,
   },
   {
@@ -38,9 +37,9 @@ const testimonials: TestimonialData[] = [
     title: "« Résultat au-delà de mes attentes »",
     content:
       "Je ne m’attendais pas à un tel niveau de qualité. Le service est bien pensé, moderne et surtout très efficace. Cela m’a fait gagner énormément de temps.",
-    author: "Hermann Gorshkov",
+    author: " Fassinou Jean",
     avatar:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150&h=150",
+      "https://i.pinimg.com/1200x/5c/8e/e6/5c8ee630400c6d0e1fbfe9bd94133ed0.jpg",
     rating: 5,
   },
   {
@@ -48,9 +47,9 @@ const testimonials: TestimonialData[] = [
     title: "« Un accompagnement humain et sérieux »",
     content:
       "On se sent réellement accompagné, pas juste comme un simple client. Les conseils sont pertinents et adaptés à mes besoins. Une excellente expérience.",
-    author: "Jean Dupont",
+    author: "Quenum Nadia",
     avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150",
+      "https://i.pinimg.com/736x/cc/09/1e/cc091e4946690934d8bf4d15cb21c2f5.jpg",
     rating: 5,
   },
 ];

@@ -5,37 +5,37 @@ const EquipePage = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Enock DEKENOU",
+      name: "M. Enock DEKENOU",
       role: "Directeur Général",
       description: "Avec plus de 10 années d'expérience professionnelle, Enock DEKENOU, Spécialiste en gestion comptable, fiscale et organisationnelle, assure la direction stratégique et opérationnelle du cabinet. Il intervient dans la supervision des missions comptables et fiscales, la validation des dossiers à fort enjeu et l'accompagnement stratégique des entreprises, ONG et institutions. Son leadership repose sur la rigueur professionnelle, la conformité réglementaire et la recherche permanente de l'excellence."
     },
     {
       id: 2,
-      name: "Expert Fiscaliste",
-      role: "Fiscaliste",
+      name: "M. Lucien KPODAROUVI",
+      role: "Le Fiscaliste",
       description: "Professionnel expérimenté de plus de 07 ans en fiscalité et législation sociale, dispose d'une solide expertise dans la gestion des obligations fiscales des entreprises. Il accompagne les clients dans l'établissement des déclarations fiscales et sociales, l'optimisation fiscale légale et l'assistance lors des contrôles fiscaux, en garantissant la conformité aux textes en vigueur et la sécurisation des dossiers."
     },
     {
       id: 3,
-      name: "Responsable de Comptes",
+      name: "Mme Prisca SESSOUMON",
       role: "Responsable de Comptes",
       description: "Avec une expérience avérée de plus de 05 ans en gestion comptable et financière, le Responsable de Comptes assure le suivi opérationnel des dossiers clients. Il coordonne la tenue comptable, supervise les travaux de fin d'exercice, participe à l'élaboration des états financiers et veille au respect strict des délais comptables, fiscaux et sociaux, tout en assurant un conseil de proximité aux clients."
     },
     {
       id: 4,
-      name: "Assistant Comptable",
+      name: "M. Joshua FALERU",
       role: "Assistant Comptable",
       description: "Avec plus de trois ans d'expérience professionnelle, il intervient dans l'exécution quotidienne des travaux comptables sous la supervision du Responsable de Comptes."
     },
     {
       id: 5,
-      name: "Responsable Formation",
-      role: "Responsable Formation",
+      name: "M. Wilfried HOUNNASA",
+      role: "Responsable de Formation",
       description: "Professionnel spécialisé dans la formation professionnelle et le développement des compétences, de plus de 06 ans, le Responsable Formation conçoit, organise et pilote les programmes de formation du cabinet. Il veille à la qualité pédagogique des contenus, à l'encadrement des formateurs et au suivi des apprenants, afin de garantir des formations pratiques, certifiantes et adaptées aux exigences du marché du travail."
     },
     {
       id: 6,
-      name: "Responsable Marketing et Commercial",
+      name: "Mme Grâce HOUNTIPKE",
       role: "Responsable Marketing et Commercial",
       description: "Avec une expertise en marketing stratégique et développement commercial, le Responsable Marketing et Commercial assure la promotion des services et formations du cabinet. Il met en œuvre les stratégies de communication, de prospection et de fidélisation, contribuant activement à la visibilité, à la croissance du portefeuille clients et au positionnement de WELL STEVEN SARL comme cabinet de référence."
     }
@@ -46,7 +46,7 @@ const EquipePage = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-momo sm:text-4xl font-bold text-slate-900 mb-4">
-            Notre équipe de formateurs experts
+            Notre équipe de professionnels experts
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Des professionnels expérimentés qui partagent leur savoir-faire avec passion
@@ -99,7 +99,7 @@ const EquipePage = () => {
                 )}
                 {index === 4 && (
                   <Image
-                    src="/Services/service-2.jpg"
+                    src="/images/hero1.jpg"
                     alt={member.name}
                     fill
                     className="object-cover"
@@ -108,7 +108,7 @@ const EquipePage = () => {
                 )}
                 {index === 5 && (
                   <Image
-                    src="/Services/service-1.jpg"
+                    src="/images/foto.jpg"
                     alt={member.name}
                     fill
                     className="object-cover"
