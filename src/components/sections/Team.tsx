@@ -26,19 +26,8 @@ const EquipePage = () => {
       name: "Assistant Comptable",
       role: "Assistant Comptable",
       description: "Avec plus de trois ans d'expérience professionnelle, il intervient dans l'exécution quotidienne des travaux comptables sous la supervision du Responsable de Comptes."
-    },
-    {
-      id: 5,
-      name: "Responsable Formation",
-      role: "Responsable Formation",
-      description: "Professionnel spécialisé dans la formation professionnelle et le développement des compétences, de plus de 06 ans, le Responsable Formation conçoit, organise et pilote les programmes de formation du cabinet. Il veille à la qualité pédagogique des contenus, à l'encadrement des formateurs et au suivi des apprenants, afin de garantir des formations pratiques, certifiantes et adaptées aux exigences du marché du travail."
-    },
-    {
-      id: 6,
-      name: "Responsable Marketing et Commercial",
-      role: "Responsable Marketing et Commercial",
-      description: "Avec une expertise en marketing stratégique et développement commercial, le Responsable Marketing et Commercial assure la promotion des services et formations du cabinet. Il met en œuvre les stratégies de communication, de prospection et de fidélisation, contribuant activement à la visibilité, à la croissance du portefeuille clients et au positionnement de WELL STEVEN SARL comme cabinet de référence."
     }
+    // Supprimé les membres 5 et 6
   ];
 
   return (
@@ -53,8 +42,9 @@ const EquipePage = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Première ligne : 2 membres */}
+          {teamMembers.slice(0, 2).map((member, index) => (
             <div 
               key={member.id}
               className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-200"
@@ -67,7 +57,7 @@ const EquipePage = () => {
                     alt={member.name}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
                   />
                 )}
                 {index === 1 && (
@@ -76,43 +66,55 @@ const EquipePage = () => {
                     alt={member.name}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
                   />
                 )}
-                {index === 2 && (
+                
+                {/* Overlay avec description qui apparaît au survol */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                    <p className="text-white text-sm leading-relaxed">
+                      {member.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold text-slate-900 mb-1">
+                  {member.name}
+                </h3>
+                <p className="text-[#ff5c00] font-medium text-sm">
+                  {member.role}
+                </p>
+              </div>
+            </div>
+          ))}
+
+          {/* Deuxième ligne : 2 membres */}
+          {teamMembers.slice(2, 4).map((member, index) => (
+            <div 
+              key={member.id}
+              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-200"
+            >
+              <div className="relative h-72 overflow-hidden">
+                {/* Image du membre */}
+                {index === 0 && (
                   <Image
                     src="/RESPONSABLE DE COMPTE/1765897974580.jpg"
                     alt={member.name}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
                   />
                 )}
-                {index === 3 && (
+                {index === 1 && (
                   <Image
                     src="/ASSISTANT COMPTABLE/IMG-20251216-WA0067.jpg"
                     alt={member.name}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                )}
-                {index === 4 && (
-                  <Image
-                    src="/Services/service-2.jpg"
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                )}
-                {index === 5 && (
-                  <Image
-                    src="/Services/service-1.jpg"
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
                   />
                 )}
                 
